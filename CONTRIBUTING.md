@@ -2,6 +2,18 @@
 
 These are our team rules for the Team App project. They follow the course brief: every change is reviewed by a teammate, tests run in CI, and nothing reaches `main` without a pull request.
 
+## 0. Setup to-do for the app owner (Sachi)
+
+Only the repo owner can do these (repo **Settings**):
+
+- [ ] **Make the repo private** (Settings → General → Danger Zone → Change visibility). The assignment requires a private repo, and it is public right now.
+- [ ] Add every teammate as a collaborator (Settings → Collaborators).
+- [ ] Add the instructors as collaborators: `joewadcan` and `prakharj282`.
+- [ ] Protect `main` (Settings → Branches → Add rule for `main`): require a pull request, require 1 approval, require status checks (CI) to pass.
+- [ ] Push the solo app's code and the original `PLAN.md` (check that no passwords or API keys were ever committed).
+- [ ] Add the GitHub Actions workflow that runs the tests on every PR (any agent can write it once the code is in).
+- [ ] Set the host to deploy automatically from `main`, and share the live URL with the team.
+
 ## 1. Ground rules
 
 - **Never push to `main`.** Every change goes through a pull request (PR).
